@@ -1,0 +1,330 @@
+/* reset des propriétés html par défaut */
+*{
+	padding:0;/*marge interne*/
+	margin:0;/*marge externe*/
+	box-sizing:border-box;
+	outline:none;/*pas d'effet d'activation liés aux navigateurs*/
+}
+
+body{
+	font-family: 'Dancing Script', Helvetica, sans-serif;
+	font-family: 'DM-sans', Helvetica, sans-serif;
+	font-size: 1.05rem;
+}
+
+/*****************************************/
+
+.w1{
+	width: 100%;
+}
+
+.w2{
+	width:40%
+}
+
+.w3{
+	width:31%
+}
+
+.w4{
+	width : 23%
+}
+
+.w70{
+	width:70%;
+}
+
+.h_30vh{
+	height:30vh;
+}
+
+.pad_5{
+	padding:5%;
+}
+
+.padh_5{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+.padh_10{
+	padding-top:10%;
+	padding-bottom: 10%;
+}
+
+.padv_5{
+	padding-left:5%;
+	padding-right:5%;
+}
+
+.padv_15{
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.padb_2{
+	padding-bottom: 2%;
+}
+
+.margr_20p{
+	margin-right:20px;
+}
+
+.margl_2{
+	margin-left:2%;
+}
+
+.bgcolor_1{
+	background-color:var(--color_1);
+}
+
+.bgcolor_2{
+	background-color:var(--color_2);
+}
+
+.txtcolor_1{
+	color:var(--color_1)
+}
+
+.txtcolor_2{
+	color:var(--color_2)
+}
+
+.txtcolor_3{
+	color:var(--color_3)
+}	
+
+.txt_DM{
+	font-family: 'DM-sans';
+}
+
+.txt_Dancing{
+	font-family: 'Dancing Script';
+}
+.txt_center{
+	text-align:center;
+}
+
+.txtsize_2{
+	font-size:2rem;
+}
+
+.centerv{
+	align-items:center;
+}
+
+.start{
+	align-items:flex-start;
+}
+
+.end{
+	align-items:flex-end;
+}
+
+.centerh{
+	justify-content:center;
+}
+
+.between{
+	justify-content:space-between;
+}
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.btn{
+	font-size:.7rem;
+	border-radius: 18px;
+	padding:12px 30px;
+}
+
+.liste{
+	list-style-type: none;
+}
+
+.lien{
+	text-decoration: none;
+}
+
+/**********************************/
+
+
+header nav ul li{
+	font-size:.9rem;
+	padding-right: 30px;
+}
+
+header nav ul li:first-child::before{
+	content:"";
+	width: 3.5%;
+	height:auto;
+	border-top:1px solid var(--color_2);
+	position:absolute;
+	top:5.2%;
+	left:4.3%;
+	z-index:100;
+}
+
+header .logo{
+	margin: 10px 5% 10px 0;
+}
+
+header .cta .reseaux p{
+	margin-right:30px;
+}
+
+
+/*******************************************/
+
+#slider{
+	background: url("../images/slider.png") no-repeat;
+	background-size: cover;
+	border-top: 2px dotted var(--color_1);
+	height:80vh;
+}
+
+#slider::after{
+	content:"";
+	width: 80%;
+	height:80vh;
+	border-bottom: 2px solid var(--color_1);
+	position: absolute;
+	left:0;
+}
+
+#slider h1{
+	font-size:5.5rem;
+}
+
+#slider h2{
+	font-size: 4.5rem;
+	margin-bottom:5%;
+}
+
+/**************************************************/
+
+#members{
+	margin-bottom:10%;
+}
+
+#members article:first-child{
+	background:url("../images/vocal.png") no-repeat;
+	background-size: cover;
+}
+
+#members article:nth-child(2){
+	background:url("../images/vinyl.png") no-repeat;
+	background-size: cover;
+}
+
+#members article:last-child{
+	background:url("../images/guitar.png") no-repeat;
+	background-size: cover;
+}
+
+#members .groupe article{
+	padding-top:33%;
+}
+
+#members .groupe article div{
+	padding:2% 0;
+}
+
+#members .groupe h1{
+	font-size: 1rem;
+}
+
+#members .groupe h2{
+	font-size: .8rem;
+}
+
+/*******************************/
+#concert::before{
+	content:"";
+	width: 49%;
+	height:50%;
+	border-bottom: 2px solid var(--color_4);
+	position: absolute;
+	left:15%;
+	z-index: 100;
+}
+
+#concert::after{
+	content:"";
+	width: 8%;
+	height:50%;
+	border-bottom: 2px solid var(--color_1);
+	position: absolute;
+	left:16%;
+	z-index: 100;
+}
+
+#concert article{
+	background: url(../images/upcoming.png) no-repeat;
+	background-size: contain;
+}
+
+#concert .infos_concert{
+	margin-top:2%;
+	margin-left:35%;
+}
+
+#concert .infos_concert .btn{
+	padding:12px 40px;
+}
+
+#concert .video{
+	background: url(../images/latest.png)no-repeat;
+	background-size: cover;
+	width:30%;
+}
+
+#concert .video .btn{
+	padding:15px;
+	border-radius: 100%;
+}
+
+/*************************/
+
+#memorial{
+	margin: 10% 0;
+}
+
+#memorial .founder{
+	background: url("../images/acordeon.png") no-repeat;
+	background-size: cover;
+	height:50vh;
+}
+
+#memorial .txt_memo h1{
+	font-size:2.5rem;
+}
+
+#memorial .txt_memo p{
+	margin-bottom:10%;
+}
+
+#memorial .txt_memo p span{
+	font-size:4rem;
+}
+
+#memorial .txt_memo .btn{
+	padding:12px 50px;
+}
+
+/********************************/
+
+footer{
+	border-top: 2px solid var(--color_4);
+}
+
+footer nav{
+	padding-left:25%;
+	padding-right:25%;
+}
+
+footer p{
+	font-size:1.5rem;
+}
